@@ -27,6 +27,11 @@ Create user with read/write access:
 
     > db.addUser( { user: "username", pwd: "password", roles: [ "readWrite"] })
 
+Enable Authorization within mongod.conf and restart mongo:
+```
+security:
+    authorization: enabled
+```  
 ### Get the source
 
     git clone https://github.com/vattay/iquidus-btg explorer
